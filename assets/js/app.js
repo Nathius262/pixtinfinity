@@ -1,8 +1,8 @@
-import { Header } from "./components/Header.js"
-import { footer } from "./components/Footer.js"
-import { post, news } from "./components/Post.js"
+import {Header} from "./components/Header.js"
+import {footer} from "./components/Footer.js"
+import {post, news} from "./components/Post.js"
 
-let header  =  document.querySelector('#header')
+let header = document.querySelector('#header')
 let footerEl = document.querySelector('footer')
 let head = document.querySelector('head')
 let newsEl = document.querySelector('#main-news')
@@ -20,6 +20,10 @@ head.insertAdjacentHTML('afterbegin', `
     <meta name="description" content="Transforming Ideas into Immersive Experiences through Innovative Programming">
     <meta name="keywords" content="pixtinifinty, pixet, pixt, infinity">
     <meta name="author" content="pixtinifinty">
+    <meta property="og:title" content="Pixtinfinity- Programing Ideas Into Experience">
+    <meta property="og:description" content="Transforming Ideas into Immersive Experiences through Innovative Programming">
+    <meta property="og:image" content="assets/images/logo-footer.png">
+    <meta property="og:url" content="https://pixtinfinity.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="assets/images/favicon.ico">
     <title>PIXTINFINITY</title>

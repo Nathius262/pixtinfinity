@@ -1,4 +1,21 @@
+import { renderModelList } from "./fetch.js"
+
+const endpoint = "http://127.0.0.1:8000/blog/api/"
+const siteURL = window.location.protocol + '//' + window.location.host
+
+let options = {
+    "method":"GET",
+    "credentials": 'include',
+	"origin": siteURL,
+    "headers":{
+        'Content-Type': 'application/json',
+        //'X-CSRFToken': csrftoken,
+    },
+}
+
 function post(){
+	console.log(siteURL)
+	console.log(renderModelList(endpoint + "post/", options))
     let el = `
     <div class="col-sm-4">
 				<div class="sidebar">
