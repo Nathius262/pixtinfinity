@@ -11,12 +11,19 @@ let postEl = document.querySelector('#posts')
 
 header.insertAdjacentHTML("afterbegin", Header())
 footerEl.insertAdjacentHTML("afterbegin", footer())
-newsEl.insertAdjacentHTML('afterbegin', news())
-postEl.insertAdjacentHTML('afterbegin', post())
+
+try {
+    newsEl.insertAdjacentHTML('afterbegin', news())
+    postEl.insertAdjacentHTML('afterbegin', post())
+} catch (TypeError) {
+    
+}
 
 
 head.insertAdjacentHTML('afterbegin', `
-     
+    <link rel="icon" href="assets/images/favicon.ico">
+    <title>PIXTINFINITY</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
